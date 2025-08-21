@@ -1,245 +1,282 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Personal HTML-5 Template </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Ranjith Kumar V | Portfolio</title>
+  <meta name="description" content="Portfolio of Ranjith Kumar V - Web Developer, Designer and Programmer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- CSS here -->
-            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-            <link rel="stylesheet" href="assets/css/slicknav.css">
-            <link rel="stylesheet" href="assets/css/flaticon.css">
-            <link rel="stylesheet" href="assets/css/animate.min.css">
-            <link rel="stylesheet" href="assets/css/magnific-popup.css">
-            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-            <link rel="stylesheet" href="assets/css/themify-icons.css">
-            <link rel="stylesheet" href="assets/css/slick.css">
-            <link rel="stylesheet" href="assets/css/nice-select.css">
-            <link rel="stylesheet" href="assets/css/style.css">
-   </head>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-   <body>
-    <!-- Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.jpg" alt="">
-                </div>
-            </div>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/slicknav.css">
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/css/themify-icons.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    /* Custom Animations */
+    .hero-cap h2 {
+      font-size: 48px;
+      font-weight: bold;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    .hero-cap p {
+      animation: fadeInUp 2s ease;
+    }
+
+    .btn-primary {
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .single-services {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .single-services:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .portfolio-img img {
+      border-radius: 10px;
+      transition: transform 0.4s ease-in-out;
+    }
+    .portfolio-img:hover img {
+      transform: scale(1.05);
+    }
+
+    footer p, footer a {
+      animation: fadeInUp 1.5s ease;
+    }
+  </style>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+      <div class="preloader-inner position-relative">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img pere-text">
+          <img src="assets/img/logo/logo.png" alt="Ranjith Logo">
         </div>
+      </div>
     </div>
-    <!-- Preloader Start -->
-    <header>
-        <!-- Header Start -->
-        <div class="header-area">
-                <div class="main-header  header-sticky">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-2 col-lg-2 col-md-1">
-                                <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-xl-10 col-lg-10 col-md-10">
-                                <div class="menu-main d-flex align-items-center justify-content-end">
-                                    <!-- Main-menu -->
-                                    <div class="main-menu f-right d-none d-lg-block">
-                                        <nav> 
-                                            <ul id="navigation">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="portfolio.html">Portfolio</a></li>
-                                                <li><a href="#">Page</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="blog.html">Blog</a></li>
-                                                        <li><a href="blog_details.html">Blog Details</a></li>
-                                                        <li><a href="elements.html">Element</a></li>
-                                                        <li><a href="portfolio_details.html">Portfolio Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <div class="header-right-btn f-right d-none d-xl-block ml-20">
-                                        <a href="#" class="btn header-btn">Get Free Consultent</a>
-                                    </div>
-                                </div>
-                            </div>   
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        <!-- Header End -->
-    </header>
-    <main>
+  </div>
 
-        <!-- Header Start -->
-        <div class="slider-area ">
-            <div class="slider-height2 d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="hero-cap">
-                                <h2>My Portfolio</h2>
-                                <nav aria-label="breadcrumb ">
-                                    <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="#">My Portfolio</a></li> 
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- Header -->
+  <header>
+    <div class="header-area">
+      <div class="main-header header-sticky wow fadeInDown" data-wow-delay="0.3s">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-xl-2 col-lg-2 col-md-1">
+              <div class="logo">
+                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+              </div>
             </div>
-        </div>
-        <!-- Header End -->
-        <!-- Services Details Start -->
-        <div class="portfolio-details-area section-padding2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="portfolio-img">
-                            <div class="details-img mb-40">
-                                <img src="assets/img/gallery/portfolio.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-xl-10 col-lg-10 col-md-10">
+              <div class="menu-main d-flex align-items-center justify-content-end">
+                <div class="main-menu f-right d-none d-lg-block">
+                  <nav>
+                    <ul id="navigation">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About Me</a></li>
+                      <li><a href="services.html">Skills</a></li>
+                      <li><a href="portfolio.html">Projects</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </nav>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="details-caption pl-50">
-                            <p>Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim.Mollit anim laborum.Dvcuis aute iruxvfg.</p>
+                <div class="header-right-btn f-right d-none d-xl-block ml-20">
+                  <a href="contact.html" class="btn header-btn">Hire Me</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mobile_menu d-block d-lg-none"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-                            <p class="mb-50">Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim.Mollit anim laborum.Dvcuis aute iruxvfg.</p>
-
-                            <h3>How can we help?</h3>
-                            <p>Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim.Mollit anim laborum.Dvcuis aute iruxvfg.</p>
-                            
-                        </div>
-                    </div>
-                </div>
+  <!-- Hero Section -->
+  <main>
+    <div class="slider-area">
+      <div class="slider-height2 d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 text-center">
+              <div class="hero-cap wow fadeInUp" data-wow-delay="0.5s">
+                <h2>Hello, I’m <span style="color:#ff4a57;">Ranjith Kumar V</span></h2>
+                <p class="animated fadeIn">Web Developer | Designer | Programmer</p>
+                <a href="assets/Ranjith_Resume.pdf" class="btn btn-primary mt-3 animated pulse infinite">Download Resume</a>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Services Details End -->
-        <!-- Contact Info Start -->
-        <div class="contact-info-area w-padding2" data-background="assets/img/gallery/section_bg04.jpg">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-xl-5 col-lg-7">
-                      <div class="contact-caption mb-50">
-                            <h3>If Not Now, When? Let’s Work Together!</h3>
-                            <p>Consectetur adipiscing elit, sed do eiusmod tempor ididunt ut labore et dolore magna aliqua. Quis ipsum suspendisces gravida. Risus commodo viverra.</p>
-                            <img src="assets/img/gallery/sin.png" alt="">
-                      </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-5">
-                        <form action="#" class="contact-wrapper">
-                            <input type="text" name="name" placeholder="Full Name">
-                            <input type="email" name="email" placeholder="Email Address">
-                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                            <button class="submit-btn2" type="submit">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Contact Info End -->
-
-    </main>
-    <footer>
-        <!-- Footer Start-->
-        <div class="footer-area">
-            <div class="container">
-               <div class="footer-top footer-padding">
-                   <div class="row justify-content-center">
-                       <div class="col-lg-6">
-                            <div class="footer-top-cap text-center">
-                                <img src="assets/img/logo/logo2_footer.png" alt="">
-                               <span><a href="#">hireme@portfolio.com</a></span>
-                                <p>221B Baker Street, Post office Box 353 </p>
-                                <p>Park Road, USA - 215431</p>
-                            </div>
-                       </div>
-                   </div>
-               </div>
-                <div class="footer-bottom">
-                    <div class="row d-flex justify-content-between align-items-center">
-                        <div class="col-xl-9 col-lg-8">
-                            <div class="footer-copy-right">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4">
-                            <!-- Footer Social -->
-                            <div class="footer-social f-right">
-                                <a>Stay Connected</a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-               </div>
-            </div>
-        </div>
-        <!-- Footer End-->
-    </footer>
-    <!-- Scroll Up -->
-    <div id="back-top" >
-        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+      </div>
     </div>
 
+    <!-- About -->
+    <section class="about-area section-padding2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.3s">
+            <img src="assets/img/gallery/portfolio.png" alt="Ranjith Portfolio" class="img-fluid rounded shadow-lg">
+          </div>
+          <div class="col-lg-6 pl-50 wow fadeInRight" data-wow-delay="0.5s">
+            <h3>About Me</h3>
+            <p>I am a passionate Web Developer with expertise in front-end and back-end development. I enjoy creating modern, responsive, and user-friendly websites. With experience in HTML, CSS, JavaScript, React, Node.js, and databases, I aim to build impactful solutions.</p>
+            <p>Currently seeking opportunities to contribute my skills in real-world projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- JS here -->
-		<!-- All JS Custom Plugins Link Here here -->
-        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-		<!-- Jquery, Popper, Bootstrap -->
-		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="./assets/js/popper.min.js"></script>
-        <script src="./assets/js/bootstrap.min.js"></script>
-	    <!-- Jquery Mobile Menu -->
-        <script src="./assets/js/jquery.slicknav.min.js"></script>
+    <!-- Skills -->
+    <section class="services-area section-padding2">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-12 wow fadeInUp">
+            <h2>My Skills</h2>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="single-services">
+              <i class="fas fa-code fa-2x mb-3"></i>
+              <h4>Web Development</h4>
+              <p>HTML, CSS, JavaScript, React, Node.js</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="single-services">
+              <i class="fas fa-database fa-2x mb-3"></i>
+              <h4>Databases</h4>
+              <p>MySQL, MongoDB</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="single-services">
+              <i class="fas fa-paint-brush fa-2x mb-3"></i>
+              <h4>UI/UX Design</h4>
+              <p>Figma, Adobe XD, Responsive Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- Jquery Slick , Owl-Carousel Plugins -->
-        <script src="./assets/js/owl.carousel.min.js"></script>
-        <script src="./assets/js/slick.min.js"></script>
-		<!-- One Page, Animated-HeadLin -->
-        <script src="./assets/js/wow.min.js"></script>
-		<script src="./assets/js/animated.headline.js"></script>
-        <script src="./assets/js/jquery.magnific-popup.js"></script>
+    <!-- Projects -->
+    <section class="portfolio-details-area section-padding2">
+      <div class="container">
+        <h2 class="text-center mb-5 wow fadeInUp">Featured Projects</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 wow zoomIn" data-wow-delay="0.3s">
+            <div class="portfolio-img">
+              <img src="assets/img/gallery/project1.jpg" alt="">
+              <h5 class="mt-3">E-commerce Website</h5>
+              <p>Developed a responsive online store with shopping cart and payment integration.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 wow zoomIn" data-wow-delay="0.5s">
+            <div class="portfolio-img">
+              <img src="assets/img/gallery/project2.jpg" alt="">
+              <h5 class="mt-3">Portfolio Website</h5>
+              <p>Designed and developed personal portfolio showcasing skills and projects.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 wow zoomIn" data-wow-delay="0.7s">
+            <div class="portfolio-img">
+              <img src="assets/img/gallery/project3.jpg" alt="">
+              <h5 class="mt-3">Blog Platform</h5>
+              <p>Created a full-stack blog app with authentication and content management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- Nice-select, sticky -->
-        <script src="./assets/js/jquery.nice-select.min.js"></script>
-		<script src="./assets/js/jquery.sticky.js"></script>
-        
-        <!-- contact js -->
-        <script src="./assets/js/contact.js"></script>
-        <script src="./assets/js/jquery.form.js"></script>
-        <script src="./assets/js/jquery.validate.min.js"></script>
-        <script src="./assets/js/mail-script.js"></script>
-        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-        
-		<!-- Jquery Plugins, main Jquery -->	
-        <script src="./assets/js/plugins.js"></script>
-        <script src="./assets/js/main.js"></script>
-        
-    </body>
+    <!-- Contact -->
+    <section class="contact-info-area w-padding2" data-background="assets/img/gallery/section_bg04.jpg">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-xl-5 col-lg-7 wow fadeInLeft">
+            <div class="contact-caption mb-50">
+              <h3>Let’s Work Together!</h3>
+              <p>Feel free to reach out for collaborations or freelance work.</p>
+              <p><strong>Email:</strong> ranjithkumarv@gmail.com</p>
+              <p><strong>Phone:</strong> +91-9876543210</p>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-5 wow fadeInRight">
+            <form action="#" class="contact-wrapper">
+              <input type="text" name="name" placeholder="Full Name">
+              <input type="email" name="email" placeholder="Email Address">
+              <textarea name="message" id="message" placeholder="Your Message"></textarea>
+              <button class="submit-btn2" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="wow fadeInUp" data-wow-delay="0.3s">
+    <div class="footer-area">
+      <div class="container">
+        <div class="footer-top footer-padding text-center">
+          <img src="assets/img/logo/logo2_footer.png" alt="">
+          <p>Email: ranjithkumarv@gmail.com</p>
+          <p>Chennai, India</p>
+        </div>
+        <div class="footer-bottom d-flex justify-content-between align-items-center">
+          <p>© <script>document.write(new Date().getFullYear());</script> Ranjith Kumar V. All Rights Reserved.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.slicknav.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script> new WOW().init(); </script>
+  <script src="assets/js/animated.headline.js"></script>
+  <script src="assets/js/jquery.magnific-popup.js"></script>
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <script src="assets/js/jquery.sticky.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/jquery.form.js"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
+  <script src="assets/js/mail-script.js"></script>
+  <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
